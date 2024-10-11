@@ -27,7 +27,7 @@ export function Page() {
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-red-600">Redbox Disposal</h1>
+          <h1 className="text-2xl font-bold text-red-600">Redbox Removal</h1>
           <nav>
             <ul className="flex space-x-4">
               <li><a href="#home" className="text-gray-600 hover:text-red-600">Home</a></li>
