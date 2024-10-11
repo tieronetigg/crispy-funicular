@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Truck, Recycle, Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react'
+import Image from 'next/image';
 
 export function Page() {
   const [name, setName] = useState('')
@@ -42,7 +43,7 @@ export function Page() {
       <section id="home" className="bg-red-600 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-4">Professional Redbox Kiosk Removal Services</h2>
-          <p className="text-xl mb-8">Efficiently Clearing Your Locations for What's Next</p>
+          <p className="text-xl mb-8">Efficiently Clearing Your Locations for What&apos;s Next</p>
           <Button className="bg-white text-red-600 hover:bg-gray-100">Get a Quote</Button>
         </div>
       </section>
@@ -85,7 +86,7 @@ export function Page() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <img src="/placeholder.svg?height=400&width=600" alt="Redbox Disposal Team" className="rounded-lg shadow-md" />
+              <Image src="my-app/public/images/redbox.webp" alt="Description" width={500} height={500} />
             </div>
             <div className="md:w-1/2 md:pl-8">
               <h2 className="text-3xl font-bold mb-4">About Redbox Disposal</h2>
