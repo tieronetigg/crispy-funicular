@@ -89,9 +89,9 @@ export function Page() {
               <Image src="/images/redbox.jpg" alt="Hero Image" width={1000} height={1000} />
             </div>
             <div className="md:w-1/2 md:pl-8">
-              <h2 className="text-3xl font-bold mb-4">About Redbox Disposal</h2>
+              <h2 className="text-3xl font-bold mb-4">About Redbox Removal</h2>
               <p className="text-gray-600 mb-4">
-                At Redbox Disposal, we specialize in delivering professional removal services for
+                At Redbox Removal, we specialize in delivering professional removal services for
                 corporate clients seeking to dispose of their Redbox kiosks efficiently and responsibly.
                 With extensive experience and a focus on customer satisfaction, we provide seamless
                 solutions that meet your business needs.
@@ -177,7 +177,7 @@ export function Page() {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2024 Redbox Disposal. All rights reserved.</p>
+          <p>&copy; 2024 Redbox Removal. All rights reserved.</p>
         </div>
       </footer>
     </div>
