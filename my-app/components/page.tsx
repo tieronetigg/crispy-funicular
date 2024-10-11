@@ -86,7 +86,7 @@ export function Page() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <Image src="my-app/public/images/redbox.webp" alt="Description" width={1000} height={1000} />
+              <Image src="my-app/public/images/redbox.jpg" alt="Description" width={1000} height={1000} />
             </div>
             <div className="md:w-1/2 md:pl-8">
               <h2 className="text-3xl font-bold mb-4">About Redbox Disposal</h2>
