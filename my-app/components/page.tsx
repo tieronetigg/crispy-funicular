@@ -12,15 +12,26 @@ export function Page() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', { name, email, message })
-    // Reset form fields
-    setName('')
-    setEmail('')
-    setMessage('')
-  }
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const formData = { name, email, message };
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+    if (response.ok) {
+      console.log('Form submitted successfully');
+      setName('');
+      setEmail('');
+      setMessage('');
+    } else {
+      console.error('Error submitting form');
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
